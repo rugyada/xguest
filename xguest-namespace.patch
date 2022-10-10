@@ -1,0 +1,10 @@
+diff -p -up ./xguest.conf.home ./xguest.conf
+--- ./xguest.conf.home	2010-01-07 13:45:07.000000000 +0100
++++ ./xguest.conf	2010-01-07 13:45:19.646454297 +0100
+@@ -1,5 +1,6 @@
+ # Inserted by the xguest package.
+ /tmp    tmpfs   tmpfs   ~xguest
+ /var/tmp        tmpfs   tmpfs   ~xguest
++/home           tmpfs   tmpfs:iscript=mkxguesthome   ~xguest
+ $HOME           tmpfs   tmpfs   ~xguest
+
